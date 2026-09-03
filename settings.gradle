@@ -8,19 +8,7 @@ pluginManagement {
 
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        google()
-        mavenCentral()
-        // iBluz was published to JCenter. Aliyun still mirrors many JCenter artifacts.
-        maven { url = uri("https://maven.aliyun.com/repository/jcenter") }
-    }
-}
 
-rootProject.name = "JBSmartModern"
-include(":app")
-
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
@@ -30,3 +18,6 @@ dependencyResolutionManagement {
         }
     }
 }
+
+rootProject.name = "JBSmartModern"
+include(":app")
